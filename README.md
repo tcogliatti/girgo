@@ -1,6 +1,7 @@
 # Single Page Aplication - Web Site Girgo Hongos e-commerce
 
 Se trata de un desarrollo en el cual el objetivo es poner en practica ciertas tecnologías
+Advertencia: correr con un liveServer.
 
 ## Responsive Design
 
