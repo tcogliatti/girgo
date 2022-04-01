@@ -1,0 +1,112 @@
+
+             <!-------------------- Compras ---------------------->  
+            <section id="datosDeCompra" class="esconder">
+                <h3>Datos del Cliente</h3>     
+                <table>
+                    <tr>
+                        <td>Cliente: </td>
+                        <td>Localidad: </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Nombre" value="" placeholder="Nombre o razón social" id="nombreComra"></td>
+                        <td><input type="text" name="Localidad" value="" placeholder="Olavarría 7400" id="localCompra"></td>
+                    </tr>
+                    <tr>
+                        <td>Contacto Nombre: </td>
+                        <td>Contacto Mail</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="Contacto" value="" placeholder="Nombre contacto" id="contactoCompra"> </td>
+                        <td><input type="mail" name="Mail" value="" placeholder="contacto@gmail.com" id="mailCompra"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="condición" value="persona física" id="perFis"/> persona física</td>
+                        <td><input type="radio" name="condición" value="empresa" id="perJur"/> empresa</td>
+                    </tr>
+                </table>
+            </section>
+                
+            <!---  ingreso de producto para compra  Producto -->
+            <section class="boxCompra">
+                <div class="boxtablaCompras">
+                    <select name="producto" selected="Producto" id="selectorProducto" class="SelProducto">
+                        <option value="producto">Producto</option>
+                        <option value=0>Gírgola Rosada</option>
+                        <option value=2>Gírgola Parda</option>
+                        <option value=1>Gírgola Blanca</option>
+                        <option value=3>Gírgola Amarilla</option>
+                    </select>
+                    <div class="selectorPeso">
+                        <button class="cambioPeso">-</button>
+                        <input id="boxPeso" type="number" placeholder="Peso" name="peso" list="listapesos" step="0.5" max="20" min="0.5">   
+                        <button class="cambioPeso">+</button>
+                    </div>
+                    <div id="labelPrecioUnitario">Precio Unitario:</div>
+                    <div id="valorPrecioUnitario">$ -.-</div>
+                    <div id="labelSubtotal" >Subtotal: </div>
+                    <div id="precioSubtotal">$ -.-</div>
+                    
+                    <p class="promo">comparando mas de 10kg del mismo producto 40% de descuento</p>                   
+                </div> 
+                
+                <div class="boxAccionesTabla">
+                    <img class="icoAccionProd" src="images/addProducto.png" alt="" id="btnAgregarAcarrito">
+                    <img class="icoAccionProd" src="images/addProductoX3.png" alt="" id="btnAgregarAcarritoX3">
+                    <img class="icoAccionProd" src="images/delUltimoProducto.png" alt="" id="btnBorrarUlt">
+                    <img class="icoAccionProd" src="images/borrarLista.png" alt="" id="btnVaciarCarrito">
+                    
+                </div>
+            </section>
+          
+          
+            <!-------------------- lista de compras  _________________-->
+            <section class="contenedorTablaCompras">
+                <table class="tablaCompras">
+                    <tr class="fila">
+                        <td class="columna">item</td>
+                        <td class="columna">Producto</td>
+                        <td class="columna">Cantidad</td>
+                        <td class="columnaL">Precio Unitario</td>
+                        <td class="columna">Subtotal</td>
+                        <td class="columnaS"></td>
+                    </tr>
+                </table>
+                <div class="divisionLista"></div>
+                <table id="tablaItemsCarrito" class="tablaCompras">  
+                    <!-- aqui es donde entramos con la lista de compras -->
+                </table>
+                <div class="divisionLista"></div>
+                <table class="tablaCompras">
+                    <tr class="fila">
+                        <td class="columna">Totales</td>
+                        <td class="columna">Peso</td>
+                        <td class="columna" id="boxPesoFinal">0.0Kg</td>
+                        <td class="columnaL">Costo Final</td>
+                        <td class="columna" id="boxCostoFinal">$ -.-</td>
+                        <td class="columnaS"></td>
+                    </tr>                    
+                </table>
+            </section>            
+
+
+            <section class="checkbox">
+                
+                <div class="elementocheck">
+                    <input type="checkbox" name="solicitud" value="noticias" checked/><label for=""> Girgo Newsletter</label> 
+                </div>
+                <div class="elementocheck">
+                    <input type="checkbox" name="solicitud" value="cultivar"/><label> Quiero cultivar Hongos</label> 
+                </div>
+                <div class="elementocheck">
+                    <input type="checkbox" name="solicitud" value="capacitación"/><label for=""> Cultivo Hongos y necesito Capacitación</label>
+                </div>
+                <div class="elementocheck">
+                <input type="checkbox" name="solicitud" value="insumos"/><label for=""> Cultivo Hongos y necesito insumos</label>                </div>
+            </section>
+            <p class="esconder" id="mejeError1">Captcha Incorrecto</p>
+            <!-- boton finalizar compra -->
+            <img class="imgFinalizarCompra" id="finalizarCompra" src="images/terminarCompra.png" alt="">
+        </article>
+    
+    
+

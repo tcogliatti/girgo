@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hongos Girgo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<!----------------- body ---------------->
+
+
+
+<body background="images/fondo.jpg" id="idBody">
+    
+
+    <header>
+        <div class="imgHeader">
+            <img src="images/Seta-Ostra-Parda.png" alt="" class="imgHeader">
+            <button class="login" id="btnLogDesk">Login</button>
+        </div>
+    </header>
+    <nav class="boxNav">       <!---------- Barra Navegacion -->
+        <div class="topBarNav">
+            <img src="images/menu.png" alt="" class="btnMenu" id="menu">
+            <h2 class="boxTituloPagina" id="tituloPagina">COMPRAS</h2>
+            <button class="login" >Login</button>
+        </div>
+        <!-- ventana login -->
+        <div class="esconder" id="boxLoginMovil"> 
+            <table class="loginForm">
+                <tr>
+                    <td>Usuario: </td>
+                    <td><input type="text" id="inputUsuario" placeholder="jperez"></td>
+                </tr>
+                <tr>
+                    <td>Contraseña: </td>
+                    <td><input type="password" id="inputPass" placeholder="jperez"></td>
+                </tr>
+            </table>
+            <!-- button ingresar login movil -->
+            <button class="enviarLogin" id="enviarLoginID">Ingresar</button>
+            <!-- Mensaje de Error -->
+            <p class="esconder" id="mejeError"></p>  
+        </div>
+        <!-- navegador Menu desplegable-->
+        <ul class="esconderNavegador" id="barraNavRespon">
+            <li id="btn-nav" class="liNavSel"><span>Productos</span></li>
+            <li id="btn-nav" class="liNavSel"><span>Compras</span></li>
+            <li id="btn-nav"  class="liNavSel"><span>Nosotros</span></li>
+            <li id="btn-nav" class="liNavSel"><span>Contactenos</span></li>
+            <li id="btn-nav" class="liNavSel"><span>Administrador</span></li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <div class="container">
+        <article class="cuerpo">
+        
+        </article>
+    
+
+
+        <!-------------------- aside: links externos -------------------->
+        <aside>
+            <div class="boxTituloLinks">
+                <h3 class="tituloLinks"> Enlaces de Interés <span class="deslice">deslice para ver</span></h3>
+            </div>
+            <div class="overflow">
+                <div class="linksExternos">
+                    <div class="linkExterAncor">
+                        <img class="imgLinkExt"src="images/linkExperno1.png" alt="" >
+                        <a href="https://www.fungipedia.org" target="_blank" >
+                            <p class="imgLinkExt">Fungipedia</p>
+                        </a>
+                        <p class="descripLinkExt">La enciclopedia abierta del mundo fungi</p>
+                    </div>
+                    <div class="linkExterAncor">
+                        <img class="imgLinkExt"src="images/linkExt2.png" alt="" >
+                        <a href="https://www.mushroomcouncil.com/vitamin-d/" target="_blank">
+                            <p class="imgLinkExt">Sabía que?</p>
+                        </a>
+                        <p class="descripLinkExt">Los hongos son fuente de Vitamina D</p>
+                    </div> 
+                    <div class="linkExterAncor">
+                        <img class="imgLinkExt"src="images/linkExt4.png" alt="" >
+                        <a href="https://cookpad.com/ar/buscar/girgola" target="_blank"></a>
+                            <p class="imgLinkExt">Recetario CookPad</p>
+                        </a> 
+                        <p class="descripLinkExt">99 exquisitas recetas con girgolas</p>
+                    </div>                
+                    <div class="linkExterAncor">
+                        <img class="imgLinkExt"src="images/linkExt3.png" alt="" >
+                        <a href="https://thegentlechef.com/oyster-mushroom-rockefeller/" target="_blank"></a>
+                            <p class="imgLinkExt">Recetario GIRGO</p>
+                        </a> 
+                        <p class="descripLinkExt">Cocinar con hongos es fácil y divertido</p>
+                    </div>
+                </div>
+            </div> 
+        </aside>
+    </div>
+
+
+
+
+
+
+
+
+    <!-------------------- footer -------------------->
+    <footer>
+        <div>
+            <p>Girgo Hongos Comestibles © 2021</p>
+            <p>Olavarría 7400 - Buenos Aires</p>
+        </div>
+        
+        <div class="inconFooter">
+            <a href="mailto:info@girgohongos.com.ar">
+                <img class="imagFooter" src="images/logoMail.png" alt="">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img class="imagFooter" src="images/logoFace.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                <img class="imagFooter" src="images/logoInst.png" alt="">
+            </a>
+            
+        </div>
+    </footer>
+
+    <!------------------- Ventana Flotante y Captcha -------------------->
+    
+    <!-- fondo blureado -->
+    <div class="esconder" id="boxBlureado"></div> 
+    
+
+    <!-- box captcha -->
+    <div class="esconder" id="idBoxCaptcha">
+        <div class="divCentrado">
+            <button id="cerrarCaptcha">X cerrar</button>
+        </div>
+        <h4>¿Es usted un humano? resuelva el captcha utilizando solo minúsculas:</h3>
+        <div class="divCentrado">
+            <img id="captchaImg" class="boxCaptchaImg">
+        </div>
+        <div class="divCentrado">
+            <input type="text" id="captchaIn" class="captchaInStyle">
+        </div>
+        <div class="divCentrado">
+            <button id="enviarCaptcha">Enviar</button>
+        </div>
+        <div class="divCentrado" id="boxcaptchaIcorrecto">
+            <p class="esconder" id="mejeErrorCaptcha">Captcha Incorrecto</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/captcha.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    
+    
+</body>
+</html>
